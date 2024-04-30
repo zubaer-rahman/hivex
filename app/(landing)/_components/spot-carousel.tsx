@@ -38,7 +38,7 @@ export const SpotCarousel = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="rounded-lg max-h-[308px]"
+        className="rounded-lg max-h-[308px] max-w-[750px]"
       >
         {slides.map((slide, index) => {
           return (

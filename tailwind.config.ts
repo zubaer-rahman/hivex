@@ -11,12 +11,13 @@ const config = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      "xl": "1140px",
+      "2xl": "1536px",
+    },
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
       boxShadow: { custom: `0px 15px 15px 0px rgba(169, 175, 183, 0.25)` },

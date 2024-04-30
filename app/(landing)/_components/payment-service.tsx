@@ -37,21 +37,25 @@ const servies = [
 ];
 const PaymentService = () => {
   return (
-    <div className="py-[128px]  bg-white ">
-      <div className="px-[320px]">
-        <div className="flex justify-between items-center">
+    <div className="py-[75px] xl:py-[128px]  bg-white ">
+      <div className="custom-container ">
+        <div className="grid xl:grid-cols-8 grid-cols-4 gap-4">
           {servies.map((service) => (
-            <div key={service.name}>
+            <div
+              className="flex justify-center items-center"
+              key={service.name}
+            >
               <Image
                 height={50}
                 width={50}
                 src={service.icon}
                 alt={service.name}
+                className="h-[16px] xl:h-auto  w-auto"
               />
             </div>
           ))}
         </div>
-        <p className="mt-[24px] text-center text-[#93849A] text-[20px]">
+        <p className="mt-[19px] xl:mt-[24px] leading-[128%] xl:text-center text-[#93849A] text-xs xl:text-[20px] min-w-[350px] px-4">
           People, project, and pay. In that order. I care deeply about the
           people that I work with because developing a good working relationship
           with others is what makes projects successful.

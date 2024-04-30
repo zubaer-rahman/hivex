@@ -7,16 +7,14 @@ import { useRouter } from "next/navigation";
 import {
   Form,
   FormControl,
-  FormDescription,
-  FormField,
+   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { fields } from "@hookform/resolvers/ajv/src/__tests__/__fixtures__/data.js";
-import Link from "next/link";
+ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 const formSchema = z.object({
@@ -34,7 +32,7 @@ const MemberShipForm = () => {
   const { isSubmitting, isValid } = form.formState;
   const onSubmit = async () => {};
   return (
-    <div className="p-[32px] bg-white rounded-lg shadow-custom w-full">
+    <div className="p-[32px] bg-white rounded-lg shadow-custom min-w-[466px]  hidden xl:block">
       <h1 className="text-[24px] text-[#101010] font-bold">
         {" "}
         Get Free Lifetime Membership
