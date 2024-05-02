@@ -7,18 +7,20 @@ import { useRouter } from "next/navigation";
 import {
   Form,
   FormControl,
-   FormField,
+  FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
- import Link from "next/link";
+import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 const formSchema = z.object({
   title: z.string().min(1, "Title is required"),
+  email: z.string().min(1, "Email is required"),
+  contact: z.string().min(1, "Email is required"),
 });
 
 const MemberShipForm = () => {
@@ -27,6 +29,8 @@ const MemberShipForm = () => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       title: "",
+      email: "",
+      contact: "",
     },
   });
   const { isSubmitting, isValid } = form.formState;
@@ -106,20 +110,39 @@ const MemberShipForm = () => {
               </FormItem>
             )}
           />
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input
+                    className="bg-[#F2F5F7] border-none"
+                    disabled={isSubmitting}
+                    {...field}
+                    placeholder="type"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
           <div className="flex gap-[8px] w-full justify-between">
             <div className="w-full">
               <FormField
                 control={form.control}
-                name="title"
+                name="contact"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>DOB</FormLabel>
+                    <FormLabel>Contact</FormLabel>
                     <FormControl>
                       <Input
                         className="bg-[#F2F5F7] border-none"
                         disabled={isSubmitting}
                         {...field}
-                        placeholder="type"
+                        placeholder="+880"
                       />
                     </FormControl>
                     <FormMessage />

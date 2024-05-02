@@ -12,6 +12,7 @@ const Header = () => {
       <video autoPlay muted loop className="h-full w-full  object-cover">
         <source src="./header-background.mp4" type="video/mp4" />
       </video>
+      {/* <div className="absolute top-0 left-0 bg-[#2C2C2C]   h-full w-full z-40" /> */}
       <div className="absolute h-full w-full z-10 top-0 px-10">
         <div className="custom-container ">
           <Navbar />

@@ -37,7 +37,7 @@ const servies = [
 ];
 const PaymentService = () => {
   return (
-    <div className="py-[75px] xl:py-[128px]  bg-white ">
+    <div className="py-[75px] xl:py-[175px]  bg-white ">
       <div className="custom-container ">
         <div className="grid xl:grid-cols-8 grid-cols-4 gap-4">
           {servies.map((service) => (

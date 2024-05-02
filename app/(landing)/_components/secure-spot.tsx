@@ -11,7 +11,7 @@ const SecureSpot = () => {
     >
       <div className="custom-container ">
         <div className="flex flex-col items-center mb-4 lg:mb-[64px]">
-          <h1 className="text-[#9619BF] text-2xl lg:text-[64px] font-bold ">
+          <h1 className="text-[#9619BF] text-2xl lg:text-[64px] leading-[128%] font-bold ">
             Sneak Peak!
           </h1>
 
@@ -56,7 +56,7 @@ const SecureSpot = () => {
             style={{
               backgroundImage: "url('/friends.png')",
             }}
-            className="col-span-6 bg-contain lg:col-span-4 min-h-[437px]  bg-[#9619BF] p-6 bg-bottom bg-no-repeat  rounded-lg"
+            className="col-span-6 bg-cover lg:col-span-4 min-h-[437px]  bg-[#9619BF] p-6 bg-bottom bg-no-repeat  rounded-lg"
           >
             <h1 className="text-[#FFF] text-[20px] lg:text-[32px] font-bold max-w-[443px] ">
               Unmatched discounts exclusive to{" "}

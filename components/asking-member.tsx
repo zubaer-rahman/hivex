@@ -11,7 +11,7 @@ const AskingMember = () => {
         backgroundImage:
           "linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url('/bg_asking_member.png')",
       }}
-      className="h-[295px] lg:h-[480px] my-[75px] lg:my-[128px] px-10  bg-cover bg-center"
+      className="h-[295px] lg:h-[480px] my-[75px] lg:my-[175px] px-10  bg-cover bg-center"
     >
       <div className="custom-container h-full">
         <div className="flex flex-col justify-center h-full ">

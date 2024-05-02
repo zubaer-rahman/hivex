@@ -43,12 +43,7 @@ export const SpotCarousel = () => {
         {slides.map((slide, index) => {
           return (
             <SwiperSlide key={index}>
-              <div
-                style={{
-                  background:
-                    "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 43.87%, rgba(0, 0, 0, 0.65) 83.14%)",
-                }}
-              >
+              <div>
                 <Image
                   src={slide.image}
                   height={308}
@@ -56,7 +51,14 @@ export const SpotCarousel = () => {
                   alt="slide image"
                   className="w-full h-[308px]"
                 />
-                <p className="absolute bottom-[20px]  left-[30px] right-[28px] text-lg text-white">
+                <div
+                  className=" h-full w-full absolute top-0 left-0 z-40 "
+                  style={{
+                    background:
+                      "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 43.87%, rgba(0, 0, 0, 0.65) 83.14%)",
+                  }}
+                />
+                <p className="absolute text-lg leading-[128%] z-50 text-white left-[30px] right-[28px] bottom-[20px]">
                   {slide.description}
                 </p>
               </div>
