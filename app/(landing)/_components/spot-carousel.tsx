@@ -38,7 +38,7 @@ export const SpotCarousel = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="rounded-lg max-h-[308px] max-w-[750px]"
+        className="rounded-lg max-h-[308px]  "
       >
         {slides.map((slide, index) => {
           return (
@@ -56,7 +56,7 @@ export const SpotCarousel = () => {
                   alt="slide image"
                   className="w-full h-[308px]"
                 />
-                <p className="absolute bottom-[20px] left-[30px] right-[28px] text-lg text-white">
+                <p className="absolute bottom-[20px]  left-[30px] right-[28px] text-lg text-white">
                   {slide.description}
                 </p>
               </div>

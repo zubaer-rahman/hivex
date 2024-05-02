@@ -16,10 +16,8 @@ const AnimatedMemory = () => {
       style={{ backgroundImage: `url("/bg_animated_memory.png")` }}
       className=" bg-[#111] bg-no-repeat  bg-right "
     >
-      <div className="mb-[128px] overflow-y-hidden  flex justify-between gap-[35px] xl:gap-[178px] h-[265px]  xl:h-[543px] max-w-[390px] xl:max-w-[1922px] mx-auto pr-[15px] xl:pr-[139px] 2xl:pr-[239px]">
-        <div
-           className="flex rotate-[-15deg] xl:rotate-[-20deg] w-full gap-[50px] justify-end pr-[30px] "
-        >
+      <div className="mb-[75px] lg:mb-[128px] overflow-y-hidden  flex justify-between gap-[35px] xl:gap-[178px] h-[265px]  xl:h-[543px] max-w-[390px] xl:max-w-[1922px] mx-auto pr-[15px] xl:pr-[139px] 2xl:pr-[239px]">
+        <div className="flex rotate-[-15deg] xl:rotate-[-20deg] w-full gap-[50px] justify-end pr-[30px] ">
           <div
             className={` min-w-[383px] hidden 2xl:block ${
               reverseBg ? "bg-bottom" : "bg-top"

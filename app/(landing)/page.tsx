@@ -12,8 +12,8 @@ export default function LandingPage() {
       <PaymentService />
       <AnimatedMemory />
       <SecureSpot />
-      {/* <AskingMember />
-      <Footer /> */}
+      <AskingMember />
+      <Footer />
     </>
   );
 }

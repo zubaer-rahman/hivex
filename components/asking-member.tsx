@@ -11,18 +11,18 @@ const AskingMember = () => {
         backgroundImage:
           "linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url('/bg_asking_member.png')",
       }}
-      className="h-[480px] my-[128px]"
+      className="h-[295px] lg:h-[480px] my-[75px] lg:my-[128px] px-10  bg-cover bg-center"
     >
-      <div className="custom-container h-full px-[320px]">
+      <div className="custom-container h-full">
         <div className="flex flex-col justify-center h-full ">
-          <h1 className="text-[#FFF] text-[40px] font-[800] w-[300px]">
+          <h1 className="text-[#FFF] text-lg leading-[130%] lg:text-[40px]  font-[800] w-[120px] lg:w-[300px]">
             Early <br /> Access is Limited
           </h1>
 
           <div className="py-[16px]">
             <BarSvg fill="#FC0" />
           </div>
-          <p className="text-white text-[20px] mb-[16px] w-[844px]">
+          <p className="text-white text-xs leading-[128%] lg:text-[20px] mb-[16px] max-w-[844px]">
             <span className="font-bold">Only 90 founder members</span> ,As a
             thankyou we are giving founder members free lifetime membership,
             saving $6.99 per month ($69.99 per year)
@@ -30,7 +30,7 @@ const AskingMember = () => {
           <Link href="/">
             <Button
               variant="ghost"
-              className="bg-[#9619BF] text-white text-[14px] text-sm h-[50px]"
+              className="bg-[#9619BF] text-white text-[14px] text-sm h-[36px] lg:h-[50px]"
             >
               Become a Member
               <ChevronRight className="ml-2 h-4 w-4" />
