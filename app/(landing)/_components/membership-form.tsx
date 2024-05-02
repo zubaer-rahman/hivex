@@ -36,7 +36,7 @@ const MemberShipForm = () => {
   const { isSubmitting, isValid } = form.formState;
   const onSubmit = async () => {};
   return (
-    <div className="p-[32px] bg-white rounded-lg shadow-custom min-w-[466px]  hidden xl:block">
+    <div className="p-[32px] bg-white shadow-custom min-w-[466px]  hidden xl:block">
       <h1 className="text-[24px] text-[#101010] font-bold">
         {" "}
         Get Free Lifetime Membership

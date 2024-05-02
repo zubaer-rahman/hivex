@@ -49,7 +49,7 @@ export const SpotCarousel = () => {
                   height={308}
                   width={728}
                   alt="slide image"
-                  className="w-full h-[308px]"
+                  className="w-full h-[150px] md:h-[308px]"
                 />
                 <div
                   className=" h-full w-full absolute top-0 left-0 z-40 "
@@ -58,7 +58,7 @@ export const SpotCarousel = () => {
                       "linear-gradient(180deg, rgba(0, 0, 0, 0.00) 43.87%, rgba(0, 0, 0, 0.65) 83.14%)",
                   }}
                 />
-                <p className="absolute text-lg leading-[128%] z-50 text-white left-[30px] right-[28px] bottom-[20px]">
+                <p className="absolute text-xs md:text-lg leading-[128%] z-50 text-white left-[30px] right-[28px] bottom-[20px]">
                   {slide.description}
                 </p>
               </div>
