@@ -110,39 +110,21 @@ const MemberShipForm = () => {
               </FormItem>
             )}
           />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input
-                    className="bg-[#F2F5F7] border-none"
-                    disabled={isSubmitting}
-                    {...field}
-                    placeholder="type"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
 
           <div className="flex gap-[8px] w-full justify-between">
             <div className="w-full">
               <FormField
                 control={form.control}
-                name="contact"
+                name="title"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Contact</FormLabel>
+                    <FormLabel>DOB</FormLabel>
                     <FormControl>
                       <Input
                         className="bg-[#F2F5F7] border-none"
                         disabled={isSubmitting}
                         {...field}
-                        placeholder="+880"
+                        placeholder="type"
                       />
                     </FormControl>
                     <FormMessage />
@@ -171,6 +153,43 @@ const MemberShipForm = () => {
               />
             </div>
           </div>
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input
+                    className="bg-[#F2F5F7] border-none"
+                    disabled={isSubmitting}
+                    {...field}
+                    placeholder="type"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="contact"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Contact</FormLabel>
+                <FormControl>
+                  <Input
+                    className="bg-[#F2F5F7] border-none"
+                    disabled={isSubmitting}
+                    {...field}
+                    placeholder="+880"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
           <Link href="/">
             <Button
               type="button"
