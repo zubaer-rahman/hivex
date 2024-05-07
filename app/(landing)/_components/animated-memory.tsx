@@ -1,6 +1,5 @@
 "use client";
-import BarSvg from "@/components/bar-svg";
-import { useEffect, useState } from "react";
+ import { useEffect, useState } from "react";
 
 const AnimatedMemory = () => {
   const [reverseBg, setReverseBg] = useState(false);
@@ -16,7 +15,7 @@ const AnimatedMemory = () => {
       style={{ backgroundImage: `url("/bg_animated_memory.png")` }}
       className=" bg-[#111] bg-no-repeat  bg-right "
     >
-      <div className="mb-[75px] lg:mb-[175px] overflow-y-hidden  flex justify-between gap-[35px] xl:gap-[178px] h-[265px]  xl:h-[543px] max-w-[390px] xl:max-w-[1922px] mx-auto pr-[15px] xl:pr-[139px] 2xl:pr-[239px]">
+      <div className="mb-[80px] lg:mb-[180px] overflow-y-hidden  flex justify-between gap-[35px] xl:gap-[178px] h-[265px]  xl:h-[543px] max-w-[390px] xl:max-w-[1920px] mx-auto pr-[15px] xl:pr-[139px] 2xl:pr-[239px]">
         <div className="flex min-h-[350px] translate-y-[-40px]  xl:min-h-[900px] xl:translate-y-[-150px] rotate-[-15deg] xl:rotate-[-20deg] w-full gap-[50px] justify-end pr-[30px] ">
           <div
             className={`min-w-[383px] hidden 2xl:block ${
@@ -37,18 +36,11 @@ const AnimatedMemory = () => {
             }}
           />
         </div>
-        <div className="flex flex-col justify-center max-w-[142px]  xl:max-w-[529px] ">
-          <h1 className="text-[#FFF] leading-[128%] w-[123px] xl:w-[529px] text-sm font-bold xl:text-[48px] xl:font-normal ">
-            Spend your time with the greatest activities, food festivals, venues
-            and nature
-          </h1>
-
-          <div className="py-[16px]">
-            <BarSvg fill="#9619BF" />
-          </div>
-          <p className="text-[#F2F5F7] text-[10px] xl:text-[20px] mb-[16px] ">
-            HiveX provides the best support for their members, to know more
-            explore HiveX
+        <div className="flex flex-col justify-center max-w-[342px] xl:max-w-[469px]  2xl:max-w-[669px] ">
+          <p className="text-[#F2F5F7] text-sm xl:text-[32px] mb-[16px] font-semibold  leading-[128%]">
+            <b className="font-extrabold">Hive<span className="text-[#FC0F]">X</span></b> finds the best experiences in Sydney. We negotiate discounts
+            for our members and send you curated ideas for new, better and
+            different ways to spend your free time and explore the city.
           </p>
         </div>
       </div>

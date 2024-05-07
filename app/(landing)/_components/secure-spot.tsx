@@ -9,18 +9,17 @@ const SecureSpot = () => {
       }}
       className="bg-no-repeat px-10"
     >
-      <div className="custom-container ">
+      <div className="custom-container">
         <div className="flex flex-col items-center mb-4 lg:mb-[64px]">
-          <h1 className="text-[#9619BF] text-2xl lg:text-[64px] leading-[128%] font-bold ">
+          <h1 className="text-[#9619BF] text-2xl lg:text-[50px] leading-[128%] font-[900] ">
             Sneak Peak!
           </h1>
 
           <div className="py-2 lg:py-[16px]">
-            <BarSvg fill="#9619BF" />
+            <BarSvg fill="#9619BF" height={10} width={34} />
           </div>
-          <p className="text-[#93849A] text-xs font-semibold lg:font-normal lg:text-[20px]">
-            Securing Your Spot: You&apos;re Next on Our Waitlist! with offering
-            -
+          <p className="text-[#93849A] leading-[128%] text-xs font-semibold lg:font-normal lg:text-[20px]">
+            Launching in July 2024
           </p>
         </div>
         <div className="grid grid-col-6 lg:grid-cols-10 gap-4  ">
@@ -59,17 +58,14 @@ const SecureSpot = () => {
             className="col-span-6 bg-cover lg:col-span-4 min-h-[437px]  bg-[#9619BF] p-6 bg-bottom bg-no-repeat  rounded-lg"
           >
             <h1 className="text-[#FFF] text-[20px] lg:text-[32px] font-bold max-w-[443px] ">
-              Unmatched discounts exclusive to{" "}
-              <span className="text-[#FC0]">HiveX</span> members
+              Exclusive discounts on{" "}
+              <span className="text-[#FC0]">memorable experiences</span> you can
+              share with your friends
             </h1>
 
             <div className="py-[16px]">
               <BarSvg fill="#FC0" />
             </div>
-            <p className="text-white text-xs lg:text-[16px] ">
-              HiveX provides the best support for their members, to know more
-              explore HiveX
-            </p>
           </div>
         </div>
       </div>

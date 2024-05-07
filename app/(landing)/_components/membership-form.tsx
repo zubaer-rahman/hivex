@@ -48,86 +48,63 @@ const MembershipForm = () => {
   };
   return (
     <div className="p-[22px] bg-white shadow-custom min-w-[466px] min-h-[208px]">
-      <div className=" ">
-        <h1 className="text-[24px] text-[#101010] font-bold">
+      <div className="opacity-0 animate-[makeVisible_.3s_.3s_forwards]">
+        <h1 className="text-[24px] text-[#101010] font-bold  text-center">
           {" "}
           Get Free Lifetime Membership
         </h1>
-        <p className="text-sm text-[#959595]  ">
+        <p className="text-sm text-[#959595] text-center  mb-6">
           (for 90 Founder Members){" "}
           <span className="text-[#9619BF] line-through">$6.99 per month</span>
         </p>
         <FormProvider {...methods}>
-          <form
-            onSubmit={methods.handleSubmit(onSubmit)}
-            className="space-y-1 mt-[24px] "
-          >
-            <div className="flex gap-[8px] w-full justify-between ">
-              <div className="w-full">
-                <FormTextField
-                  name="first_name"
-                  placeholder="type"
-                  label="First Name"
-                />
-              </div>
-              <div className="w-full">
-                <FormTextField
-                  name="last_name"
-                  placeholder="type"
-                  label="Last Name"
-                />
-              </div>
-            </div>
-
-            <FormTextField name="email" label="Email" placeholder="type" />
-
-            <FormTextField name="contact" placeholder="+880" label="Contact" />
-            <FormField
-              control={methods.control}
-              name="title"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Preferred offer</FormLabel>
-                  <FormControl>
-                    <Input
-                      className="bg-[#F2F5F7] border-none"
-                      disabled={isSubmitting}
-                      {...field}
-                      placeholder="Select"
+          <form onSubmit={methods.handleSubmit(onSubmit)} className="" >
+            <div className="h-0 mb-0 animate-[expandHeight_.6s_.6s_forwards]">
+              <div className="invisible animate-[revealFromLeft_1.5s_1s_forwards] ">
+                <div className="flex gap-[8px] w-full justify-between ">
+                  <div className="w-full">
+                    <FormTextField
+                      name="first_name"
+                      placeholder="type"
+                      label="First Name"
                     />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <div className="flex gap-[8px] w-full justify-between">
-              <div className="w-full">
-                <FormTextField name="dob" placeholder="type" label="DOB" />
-              </div>
-              <div className="w-full">
+                  </div>
+                  <div className="w-full">
+                    <FormTextField
+                      name="last_name"
+                      placeholder="type"
+                      label="Last Name"
+                    />
+                  </div>
+                </div>
+
+                <FormTextField name="email" label="Email" placeholder="type" />
+
                 <FormTextField
-                  name="offer_code"
-                  placeholder="type"
-                  label="Offer Code"
+                  name="contact"
+                  placeholder="+880"
+                  label="Contact"
+                />
+                <FormTextField
+                  name="birth_year"
+                  placeholder="dd/mm/yyyy"
+                  label="Year of Birth"
                 />
               </div>
             </div>
 
-            <div className="py-4">
-              <Button
-                type="submit"
-                className="bg-[#9619BF] text-[16px] rounded-lg w-full h-[50px]"
-              >
-                Join Our Waitlist
-                <ChevronRight className="h-4 w-4  ml-2" />
-              </Button>
-            </div>
+            <Button
+              type="submit"
+              className="bg-[#9619BF] text-[16px] rounded-lg w-full h-[50px]"
+            >
+              Join Our Waitlist
+            </Button>
             {/* <DevTool control={methods.control} /> */}
           </form>
         </FormProvider>
-        <p className="text-xs text-[#636C84] text-center">
+        <p className="text-xs text-[#636C84] text-center mt-3">
           I agree with the{" "}
-          <Link href={"/"} className="text-[#9619BF] underline text-xs">
+          <Link href={"/"} className="text-[#9619BF]  underline text-xs">
             {" "}
             Terms and Policies
           </Link>

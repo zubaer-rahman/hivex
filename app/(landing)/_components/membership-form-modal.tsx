@@ -13,7 +13,7 @@ import MemberShipForm from "./membership-form";
 const MembershipFormModal = () => {
   return (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger asChild className="w-full">
         <Button
           type="button"
           className="bg-[#9619BF] font-[400] text-xs rounded-lg min-w-[350px] h-[36px] mt-[8px]"

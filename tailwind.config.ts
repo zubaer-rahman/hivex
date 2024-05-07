@@ -14,8 +14,10 @@ const config = {
     screens: {
       "md": "500px",
       "lg": "930px",
+      "lg_xl": "1004px",    
       "xl": "1140px",
       "2xl": "1536px",
+      "3xl": "1760px",
     },
     container: {
       center: true,

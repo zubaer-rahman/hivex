@@ -1,5 +1,5 @@
 "use client";
-import { Controller, useFormContext } from "react-hook-form";
+import { useFormContext } from "react-hook-form";
 import {
   FormControl,
   FormField,
@@ -26,7 +26,7 @@ const FormTextField = ({
     formState: { errors, isSubmitting },
   } = useFormContext();
   return (
-    <Controller
+    <FormField
       name={name}
       control={control}
       render={({ field }) => (

@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Logo from "./logo";
-import BarSvg from "./bar-svg";
-import { Input } from "./ui/input";
+import Logo from "../../../components/logo";
+import BarSvg from "../../../components/bar-svg";
+import { Input } from "../../../components/ui/input";
 import { ChevronRight } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../../../components/ui/button";
 import Image from "next/image";
 
 export default function Footer() {
@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="lg:flex  lg:justify-between">
             <div>
               <Link href="/">
-                <Logo />
+                <Logo fillRight="#FFCC00" />
               </Link>
               <div className="my-[16px]">
                 <BarSvg />
@@ -30,7 +30,6 @@ export default function Footer() {
                 />
                 <Button className="bg-[#9619BF] h-[36px] lg:h-[50px] text-[14px]">
                   Subscribe
-                  <ChevronRight className="ml-2 h-4 w-4 text-white" />
                 </Button>
               </div>
             </div>
