@@ -37,7 +37,7 @@ const servies = [
 ];
 const PaymentService = () => {
   return (
-    <div className="pt-[50px] xl:pt-[110px] pb-[80px] xl:pb-[180px]  bg-white ">
+    <div className="pt-[110px] xl:pt-[110px] pb-[80px] xl:pb-[180px]  bg-white px-4 ">
       <div className="custom-container">
         <div className="grid xl:grid-cols-8 grid-cols-4 gap-4">
           {servies.map((service) => (
@@ -55,7 +55,7 @@ const PaymentService = () => {
             </div>
           ))}
         </div>
-        <p className="mt-[19px] xl:mt-[24px] leading-[128%] xl:text-center text-[#93849A] text-xs xl:text-[20px] min-w-[350px] px-4">
+        <p className="grid mt-[19px] xl:mt-[24px] leading-[128%] xl:text-center text-[#93849A] text-xs xl:text-[20px] min-w-[350px] ">
           People, project, and pay. In that order. I care deeply about the
           people that I work with because developing a good working relationship
           with others is what makes projects successful.

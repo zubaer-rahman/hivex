@@ -47,7 +47,7 @@ const MembershipForm = () => {
     console.log(values);
   };
   return (
-    <div className="p-[22px] bg-white shadow-custom min-w-[466px] min-h-[208px]">
+    <div className="py-[22px] bg-white shadow-custom min-w-[466px] min-h-[208px]">
       <div className="opacity-0 animate-[makeVisible_.3s_.3s_forwards]">
         <h1 className="text-[24px] text-[#101010] font-bold  text-center">
           {" "}
@@ -58,11 +58,11 @@ const MembershipForm = () => {
           <span className="text-[#9619BF] line-through">$6.99 per month</span>
         </p>
         <FormProvider {...methods}>
-          <form onSubmit={methods.handleSubmit(onSubmit)} className="" >
+          <form onSubmit={methods.handleSubmit(onSubmit)} className="">
             <div className="h-0 mb-0 animate-[expandHeight_.6s_.6s_forwards]">
               <div className="invisible animate-[revealFromLeft_1.5s_1s_forwards] ">
-                <div className="flex gap-[8px] w-full justify-between ">
-                  <div className="w-full">
+                <div className="flex gap-[8px] w-full justify-between px-[24px]">
+                  <div className="w-full ">
                     <FormTextField
                       name="first_name"
                       placeholder="type"
@@ -78,27 +78,35 @@ const MembershipForm = () => {
                   </div>
                 </div>
 
-                <FormTextField name="email" label="Email" placeholder="type" />
+                <div className="px-[24px] pb-2">
+                  <FormTextField
+                    name="email"
+                    label="Email"
+                    placeholder="type"
+                  />
 
-                <FormTextField
-                  name="contact"
-                  placeholder="+880"
-                  label="Contact"
-                />
-                <FormTextField
-                  name="birth_year"
-                  placeholder="dd/mm/yyyy"
-                  label="Year of Birth"
-                />
+                  <FormTextField
+                    name="contact"
+                    placeholder="+880"
+                    label="Contact"
+                  />
+                  <FormTextField
+                    name="birth_year"
+                    placeholder="dd/mm/yyyy"
+                    label="Year of Birth"
+                  />
+                </div>
               </div>
             </div>
 
-            <Button
-              type="submit"
-              className="bg-[#9619BF] text-[16px] rounded-lg w-full h-[50px]"
-            >
-              Join Our Waitlist
-            </Button>
+            <div className="px-[24px]">
+              <Button
+                type="submit"
+                className="bg-[#9619BF] text-[16px] rounded-lg w-full h-[50px]"
+              >
+                Join Our Waitlist
+              </Button>
+            </div>
             {/* <DevTool control={methods.control} /> */}
           </form>
         </FormProvider>

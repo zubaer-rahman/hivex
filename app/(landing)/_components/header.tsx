@@ -38,7 +38,7 @@ const Header = () => {
                 today.
               </p>
 
-              <div className="block w-full xl:hidden">
+              <div className="block w-full xl:hidden text-center">
                 <MembershipFormModal />
               </div>
             </div>
