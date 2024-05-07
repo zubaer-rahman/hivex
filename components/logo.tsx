@@ -1,4 +1,3 @@
- 
 const Logo = ({
   height = 20,
   width = 71,

@@ -23,22 +23,26 @@ const AskingMember = () => {
             <BarSvg fill="white" />
           </div>
           <p className="text-white leading-[130%] font-[600] text-xs lg:text-[20px] mb-[16px] max-w-[477px]">
-          As a thank you we are giving our founder members  
-              <span className="text-[#FC0] font-[800]"> Lifetime Membership </span> for free, worth >$70 per year.
+            As a thank you we are giving our founder members
+            <span className="text-[#FC0] font-[800]">
+              {" "}
+              Lifetime Membership{" "}
+            </span>{" "}
+            for free, worth &gt;$70 per year.
           </p>
-          
-             <div className="flex gap-4">
-             <Button
+
+          <div className="flex gap-4">
+            <Button
               variant="ghost"
               className="bg-[#9619BF] text-white text-[14px] text-sm h-[36px] lg:h-[50px]"
             >
               Become a Member
-             </Button>
-             <Button className="bg-white  text-black  w-[200px] font-semibold p-0 xl:w-[200px] text-xs xl:text-sm h-[36px] xl:h-[50px]">
-          I’m an Interested Business
-        </Button>
-             </div>
-         </div>
+            </Button>
+            <Button className="bg-white  text-black  w-[200px] font-semibold p-0 xl:w-[200px] text-xs xl:text-sm h-[36px] xl:h-[50px]">
+              I’m an Interested Business
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );
