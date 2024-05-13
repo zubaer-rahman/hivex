@@ -1,9 +1,5 @@
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import InterestedBussinessForm from "./InterestedBussinessForm";
 
 const InterestedBussinessModal = () => {
@@ -14,7 +10,7 @@ const InterestedBussinessModal = () => {
           I’m an Interested Business
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-[1440px] rounded-[20px] p-0 border-none">
+      <DialogContent className="max-w-[1440px] !rounded-[20px] p-0 border-none">
         <InterestedBussinessForm />
       </DialogContent>
     </Dialog>

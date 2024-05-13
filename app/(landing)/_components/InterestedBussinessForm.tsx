@@ -37,10 +37,10 @@ const InterestedBussinessForm = () => {
     console.log(values);
   };
   return (
-    <div className="grid grid-cols-2 h-[630px] gap-[96px]">
-      <div className="bg-[url('/bg_bussiness-form.png')]  rounded-[20px]  bg-cover bg-no-repeat" />
-      <div className="flex justify-center flex-col pr-10">
-        <div className="max-w-[420px]">
+    <div className="grid md:grid-cols-2 h-[630px] md:gap-12 lg:gap-[96px]">
+      <div className="hidden md:block bg-[url('/bg_bussiness-form.png')] rounded-[20px]   bg-cover bg-no-repeat" />
+      <div className="flex justify-center items-center md:items-start flex-col md:pr-10">
+        <div className="min-w-[420px] md:min-w-[320px]  lg:min-w-[420px]">
           <h1 className="text-[24px] text-[#101010] font-bold leading-[100%]">
             {" "}
             I’m an interested business

@@ -11,19 +11,15 @@ const config = {
   ],
   prefix: "",
   theme: {
-    screens: {
-      "md": "500px",
-      "lg": "930px",
-      "lg_xl": "1004px",    
-      "xl": "1140px",
-      "2xl": "1536px",
-      "3xl": "1760px",
-    },
     container: {
       center: true,
       padding: "2rem",
     },
     extend: {
+      screens: {
+        "lg_xl": "1004px",
+        "3xl": "1760px",
+      },
       boxShadow: { custom: `0px 15px 15px 0px rgba(169, 175, 183, 0.25)` },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
