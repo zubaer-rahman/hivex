@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { FormProvider, useForm } from "react-hook-form";
 import { z } from "zod";
 import { ChevronRight } from "lucide-react";
-import FormTextField from "@/components/form-text-field";
+import FormTextField from "@/components/form-text-input";
 
 const formSchema = z.object({
   email: z.string().min(1, { message: "Email is required" }),

@@ -1,5 +1,5 @@
 "use client";
-import FormTextField from "@/components/form-text-field";
+import FormTextField from "@/components/form-text-input";
 import { Button } from "@/components/ui/button";
 import { z } from "zod";
 

@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import FormTextField from "@/components/form-text-field";
+import FormTextField from "@/components/form-text-input";
 
 const formSchema = z.object({
   first_name: z.string().min(1, "First Name is required"),

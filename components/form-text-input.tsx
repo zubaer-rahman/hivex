@@ -9,18 +9,18 @@ import {
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { cn } from "@/lib/utils";
-interface FormTextFieldProps {
+interface FormTextInputProps {
   name: string;
-  label: string;
+  label?: string;
   className?: string;
   placeholder?: string;
 }
-const FormTextField = ({
+const FormTextInput = ({
   placeholder = "type",
   name,
   label,
   className,
-}: FormTextFieldProps) => {
+}: FormTextInputProps) => {
   const {
     control,
     formState: { errors, isSubmitting },
@@ -34,7 +34,7 @@ const FormTextField = ({
           <FormLabel>{label}</FormLabel>
           <FormControl>
             <Input
-              className={cn("bg-[#F2F5F7] border-none", className)}
+               className={cn("bg-[#F2F5F7] border-none", className)}
               disabled={isSubmitting}
               {...field}
               placeholder={placeholder}
@@ -47,4 +47,4 @@ const FormTextField = ({
   );
 };
 
-export default FormTextField;
+export default FormTextInput;

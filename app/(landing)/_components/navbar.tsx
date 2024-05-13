@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Logo from "../../../components/logo";
+import InterestedBussinessModal from "./InterestedBussinessModal";
 
 const Navbar = () => {
   return (
@@ -11,9 +12,7 @@ const Navbar = () => {
         <div className="xl:hidden block">
           <Logo fillLeft="#9619BF" fillRight="#FFCC00" />
         </div>
-        <Button className="bg-[#9619BF]  text-white  w-[200px] font-semibold p-0 xl:w-[200px] text-xs xl:text-sm h-[36px] xl:h-[50px]">
-          I’m an Interested Business
-        </Button>
+        <InterestedBussinessModal />
       </div>
     </div>
   );
