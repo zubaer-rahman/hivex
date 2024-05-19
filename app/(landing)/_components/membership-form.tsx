@@ -23,10 +23,7 @@ const formSchema = z.object({
   last_name: z.string().min(1, "Last Name is required"),
   email: z.string().min(1, "Email is required"),
   contact: z.string().min(1, "Email is required"),
-  title: z.string().min(1, "Title is required"),
-
-  dob: z.string(),
-  offer_code: z.string(),
+  birth_year: z.string()
 });
 
 const MembershipForm = () => {
@@ -37,9 +34,7 @@ const MembershipForm = () => {
       last_name: "",
       email: "",
       contact: "",
-      title: "",
-      dob: "",
-      offer_code: "",
+      birth_year: "",
     },
   });
   const { isSubmitting, isValid } = methods.formState;

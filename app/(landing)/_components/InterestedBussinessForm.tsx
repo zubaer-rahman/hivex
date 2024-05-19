@@ -64,8 +64,8 @@ const InterestedBussinessForm = () => {
                   placeholder="Contact’s job role"
                   className="border-none bg-[#F2F5F7] data-[placeholder]:text-muted-foreground"
                 />
-                <FormTextField name="email" placeholder="Contact’s number" />
-                <FormTextField name="number" placeholder="Contact’s email" />
+                <FormTextField name="number" placeholder="Contact’s number" />
+                <FormTextField name="email" placeholder="Contact’s email" />
               </div>
 
               <Button
